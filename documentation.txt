@@ -1,0 +1,19 @@
+#WebScrapping
+
+In this project i have used Python selenium to scrap data from the url.
+
+1.First you have to install all the dependencies from the requrirement.txt
+
+2.Run the file "scrape.py" it will go through 20pages of url : "https://www.amazon.in/s?k=bags&crid=2M096C61O4MLT&qid=1653308124&sprefix=ba%2Caps%2C283&ref=sr_pg_1"
+  and scrape following data from each page: 'Product Name'
+                                            'Price'
+                                            'Rating'
+                                            'Url'
+                                            'No. of Reviews'
+  and generate a Bags.csv file containing the scraped data.
+  Command to run file : "python scrape.py"
+
+3.Now run file "hiting.py" it will firstly read the Bags.csv file and take Product_url and the hit each url to scrape more detail of the product.
+  It will scrape 'ASIN','Product Description','Manufacturer' from the product url and the generates a "Bags_with_additional_data.csv" file with
+  all the data scrapped about the product("S.no","ASIN", "Product Name", "Product URL", "Product Price", "Product Description", "Rating", "Number of Reviews", "Manufacturer")  
+
